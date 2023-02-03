@@ -1,0 +1,107 @@
+.nav-section-container {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+@media (max-width: 768px) {
+  .header-container {
+    width: 90%;
+  }
+}
+.header-web-logo {
+  width: 150px;
+  margin: 5px;
+}
+.nav-items-section-large-devices {
+  width: 400px;
+}
+@media (max-width: 768px) {
+  .nav-items-section-large-devices {
+    display: none;
+  }
+}
+.nav-item-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  list-style-type: none;
+  padding: 1px;
+}
+.nav-list-item {
+  color: #64748b;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+.logout-button {
+  border-width: 0px;
+  background-color: #0284c7;
+  border-radius: 4px;
+  padding: 7px;
+  width: 80px;
+  height: 35px;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+.hamberger-icon-button {
+  display: none;
+}
+@media (max-width: 768px) {
+  .hamberger-icon-button {
+    display: flex;
+    border-width: 0px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+}
+.hamberger-icon {
+  width: 40px;
+  height: 40px;
+  color: #475569;
+}
+
+.sm-menu-card-container {
+  display: none;
+}
+@media (max-width: 768px) {
+  .sm-menu-card-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  .sm-menu-section {
+    width: 100%;
+    background-color: #e5e5e5;
+  }
+}
+
+.close-icon-btn {
+  border-width: 0px;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.close-icon {
+  width: 35px;
+  height: 53px;
+  color: #334155;
+}
+.nav-link {
+  color: none;
+  text-decoration: none;
+}

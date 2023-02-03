@@ -1,0 +1,59 @@
+.not-found-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.not-found-img {
+  width: 40%;
+  height: 50vh;
+}
+@media (min-width: 768px) {
+  .not-found-img {
+    width: 70%;
+    height: 50vh;
+  }
+}
+
+.not-found-heading {
+  color: #334155;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  font-family: 'Roboto';
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.not-found-discription {
+  color: #475569;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 48px;
+  font-family: 'Roboto';
+  text-align: center;
+  max-width: 600px;
+}
+
+.back-to-home-btn {
+  width: 164px;
+  height: 48px;
+  background: #0284c7;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  outline: none;
+  border-width: 0px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}

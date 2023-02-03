@@ -1,0 +1,150 @@
+.login-page-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .login-page-container {
+    flex-direction: column;
+    padding: 20px;
+    width: 85%;
+  }
+}
+
+.login-page-img-section {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .login-page-img-section {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.login-page-img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .login-page-img {
+    width: 70%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+
+.login-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e5e5e5;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .login-card-container {
+    width: 100%;
+    background-color: #ffffff;
+  }
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 70%;
+  border-radius: 10px;
+  padding: 60px;
+}
+@media (max-width: 768px) {
+  .login-card {
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.website-logo {
+  width: 141px;
+  height: 48px;
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .website-logo {
+    width: 121px;
+    height: 48px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+.lable-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5a7184;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .lable-text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+.input-feild {
+  padding: 10px;
+  width: 100%;
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid #c3cad9;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  outline: none;
+  color: #183b56;
+  margin-bottom: 32px;
+}
+.login-button {
+  width: 100%;
+  height: 58px;
+  background: #0284c7;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  outline: none;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+.error-msg {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ef4444;
+}

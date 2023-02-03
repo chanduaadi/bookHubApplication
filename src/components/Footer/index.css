@@ -1,0 +1,27 @@
+.footer-contianer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-list-container {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.footer-item {
+  color: #3d3c3c;
+}
+
+.footer-para-item {
+  color: #3d3c3c;
+  text-align: center;
+  margin-top: 1px;
+  font-size: 18px;
+  font-family: 'Roboto';
+}
