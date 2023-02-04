@@ -111,10 +111,10 @@ class Bookshelves extends Component {
         <img
           className="no-books-found-img"
           src="https://res.cloudinary.com/ds4vfrjq6/image/upload/v1675395251/Asset_1_1no-books-found_nlinao.jpg"
-          alt="no-books-found"
+          alt="no books"
         />
         <p className="book-not-found-discription">
-          Your Search for {searchVal} did not find any matches
+          Your search for {searchVal} did not find any matches.
         </p>
       </div>
     )
@@ -138,7 +138,7 @@ class Bookshelves extends Component {
   }
 
   renderPendingView = () => (
-    <div className="loader-container">
+    <div className="loader-container" testid="loader">
       <Loader type="TailSpin" color="#0284C7" height={50} width={50} />
     </div>
   )
@@ -147,11 +147,11 @@ class Bookshelves extends Component {
     <div className="loader-container">
       <img
         src="https://res.cloudinary.com/ds4vfrjq6/image/upload/v1675306680/Group_7522failure-img_da9ccl.png"
-        alt="failure"
+        alt="failure view"
       />
-      <h1 className="failure-view-heading">
-        Something went wrong, Please try again.
-      </h1>
+      <p className="failure-view-heading">
+        Something went wrong. Please try again
+      </p>
       <button
         className="try-again-button"
         type="button"
@@ -211,6 +211,7 @@ class Bookshelves extends Component {
                 className="search-input-btn"
                 type="button"
                 onClick={this.onSearch}
+                testid="searchButton"
               >
                 <BsSearch className="search-icon" />
               </button>
@@ -231,7 +232,7 @@ class Bookshelves extends Component {
             <div className="book-shelves-books-container">
               <div className="books-container">
                 <div className="books-search-container">
-                  <h1 className="books-list-heading">{selectTabItem}</h1>
+                  <h1 className="books-list-heading">{`${selectTabItem} Books`}</h1>
                   <div className="search-input-lg-container">
                     <input
                       type="search"
@@ -244,6 +245,7 @@ class Bookshelves extends Component {
                       className="search-input-btn"
                       type="button"
                       onClick={this.onSearch}
+                      testid="searchButton"
                     >
                       <BsSearch className="search-icon" />
                     </button>

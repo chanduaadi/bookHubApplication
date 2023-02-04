@@ -88,7 +88,7 @@ class BookDetails extends Component {
       <div className="book-details-card-container">
         <div className="book-details-card-info-container">
           <div className="book-details-image-details-container">
-            <img className="book-details-img" src={coverPic} alt="cover-pic" />
+            <img className="book-details-img" src={coverPic} alt={title} />
             <div className="book-profile-info-container">
               <h1 className="book-detail-title-text">{title}</h1>
               <p className="book-detail-author-name">{authorName}</p>
@@ -114,7 +114,7 @@ class BookDetails extends Component {
   }
 
   renderPendingView = () => (
-    <div className="loader-container">
+    <div className="loader-container" testid="loader">
       <Loader type="TailSpin" color="#0284C7" height={50} width={50} />
     </div>
   )
@@ -123,11 +123,11 @@ class BookDetails extends Component {
     <div className="loader-container">
       <img
         src="https://res.cloudinary.com/ds4vfrjq6/image/upload/v1675306680/Group_7522failure-img_da9ccl.png"
-        alt="failure"
+        alt="failure view"
       />
-      <h1 className="failure-view-heading">
-        Something went wrong, Please try again.
-      </h1>
+      <p className="failure-view-heading">
+        Something went wrong. Please try again
+      </p>
       <button
         className="try-again-button"
         type="button"

@@ -68,13 +68,13 @@ class Home extends Component {
       dots: false,
       infinite: false,
       speed: 500,
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
           },
         },
@@ -118,7 +118,7 @@ class Home extends Component {
   }
 
   renderPendingView = () => (
-    <div className="loader-container">
+    <div className="loader-container" testid="loader">
       <Loader type="TailSpin" color="#0284C7" height={50} width={50} />
     </div>
   )
@@ -127,11 +127,11 @@ class Home extends Component {
     <div className="loader-container">
       <img
         src="https://res.cloudinary.com/ds4vfrjq6/image/upload/v1675306680/Group_7522failure-img_da9ccl.png"
-        alt="failure"
+        alt="failure view"
       />
-      <h1 className="failure-view-heading">
-        Something went wrong, Please try again.
-      </h1>
+      <p className="failure-view-heading">
+        Something went wrong. Please try again
+      </p>
       <button
         className="try-again-button"
         type="button"

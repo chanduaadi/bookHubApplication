@@ -31,7 +31,6 @@ class Login extends Component {
   }
 
   onSubmitFailure = errorMsg => {
-    console.log('hii')
     this.setState({showSubmitError: true, errorMsg})
   }
 
@@ -66,7 +65,7 @@ class Login extends Component {
           <img
             className="login-page-img"
             src="https://res.cloudinary.com/ds4vfrjq6/image/upload/v1675172378/Rectangle_1467login-page-bg_bpacb7.jpg"
-            alt="img"
+            alt="website login"
           />
         </div>
         <div className="login-card-container">
@@ -74,7 +73,7 @@ class Login extends Component {
             <img
               className="website-logo"
               src="https://res.cloudinary.com/ds4vfrjq6/image/upload/v1675173503/Group_7731BookHub-icon_grnq8m.png"
-              alt="web-logo"
+              alt="login website logo"
             />
             <form className="form-container" onSubmit={this.onSubmitForm}>
               <label className="lable-text" htmlFor="username">

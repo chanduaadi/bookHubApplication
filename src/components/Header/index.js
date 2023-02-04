@@ -72,7 +72,7 @@ class Header extends Component {
             <img
               className="header-web-logo"
               src="https://res.cloudinary.com/ds4vfrjq6/image/upload/v1675173503/Group_7731BookHub-icon_grnq8m.png"
-              alt="logo"
+              alt="website logo"
             />
           </Link>
           <div className="nav-items-section-large-devices">

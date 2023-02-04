@@ -9,7 +9,7 @@ const BookCardItem = props => {
   return (
     <Link to={`/books/${id}`} className="link">
       <li className="book-card-container">
-        <img className="book-img" src={coverPic} alt="bookcard" />
+        <img className="book-img" src={coverPic} alt={title} />
         <div className="book-details-container">
           <h1 className="book-title-text">{title}</h1>
           <p className="book-author-text">{authorName}</p>
